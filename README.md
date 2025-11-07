@@ -16,32 +16,31 @@
 ---
 
 ## 🌟 About the Project
-**iNotebook** is a secure and responsive **MERN stack** web app that allows users to take notes in the cloud with authentication and privacy.  
-Users can **sign up**, **log in**, and **manage their notes** (Create, Read, Update, Delete) with smooth React UI and MongoDB backend.
+
+**iNotebook** is a secure and responsive **MERN stack** web application designed for managing your personal notes in the cloud.  
+It allows users to **sign up**, **log in**, and **manage notes** — including creating, editing, and deleting — with full authentication and authorization.  
 
 ---
 
 ## 🚀 Features
 
-✅ **User Authentication** — Secure login & signup using JWT  
-✅ **Add, Edit & Delete Notes** — Real-time state updates via React  
-✅ **Cloud Storage** — All notes saved in MongoDB Atlas  
-✅ **Responsive UI** — Mobile & desktop friendly  
-✅ **Private Routes** — User-specific data access only  
-✅ **Smart Alerts** — Clean UI feedback system  
-✅ **Secure Backend** — Token validation + password encryption  
+✅ **User Authentication** — Secure JWT login and signup  
+✅ **Add, Edit & Delete Notes** — Real-time updates with React  
+✅ **Cloud Storage** — All notes saved securely in MongoDB Atlas  
+✅ **Responsive UI** — Mobile-friendly modern layout  
+✅ **Private Routes** — User-specific access control  
+✅ **Smart Alerts** — Smooth feedback for all actions  
+✅ **Data Security** — Token-based auth and encrypted data  
 
 ---
 
 ## 🖼️ App Preview
 
-> Add your screenshots inside `/assets` and replace below 👇
-
 <div align="center">
 
-<img src="./assets/dashboard.png" width="270" alt="Dashboard" />
-<img src="./assets/editnote.png" width="270" alt="Edit Note" />
-<img src="./assets/login.png" width="270" alt="Login Page" />
+<img src="./assets/dashboard.png" width="270" alt="Dashboard Preview" />
+<img src="./assets/editnote.png" width="270" alt="Edit Note Preview" />
+<img src="./assets/login.png" width="270" alt="Login Page Preview" />
 
 </div>
 
@@ -59,75 +58,58 @@ Users can **sign up**, **log in**, and **manage their notes** (Create, Read, Upd
 
 ---
 
-## ⚙️ Setup Instructions
+## 🗂️ Folder Structure
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/sumitdwivedi01/iNotebook.git
-cd iNotebook
-2️⃣ Install dependencies
-bash
-Copy code
-npm install
-3️⃣ Configure environment variables
-Create a .env file in the backend directory:
-
-ini
-Copy code
-MONGO_URI = your_mongodb_connection_string
-JWT_SECRET = your_secret_key
-4️⃣ Run backend server
-bash
-Copy code
-cd backend
-npm start
-5️⃣ Run frontend
-bash
-Copy code
-cd ../frontend
-npm run dev
-✅ App will be live at → http://localhost:5173/
-
-🗂️ Folder Structure
-pgsql
-Copy code
 iNotebook/
 │
 ├── backend/
-│   ├── index.js
-│   ├── routes/
-│   ├── models/
-│   └── middleware/
+│ ├── index.js
+│ ├── routes/
+│ ├── models/
+│ └── middleware/
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── pages/
-│   │   └── App.js
-│   └── package.json
+│ ├── src/
+│ │ ├── components/
+│ │ ├── context/
+│ │ ├── pages/
+│ │ └── App.js
+│ └── package.json
 │
 └── assets/
-    ├── dashboard.png
-    ├── editnote.png
-    └── login.png
-🔮 Future Enhancements
-✨ Dark mode toggle
-✨ Categorized & searchable notes
-✨ Rich text formatting (bold, highlight, lists)
-✨ Share notes between users
-✨ PWA support for offline access
+├── dashboard.png
+├── editnote.png
+└── login.png
 
-👨‍💻 Author
-Sumit Dwivedi
-🎓 B.Tech CSE | MERN Developer | Lifelong Learner
-🌐 GitHub • LinkedIn
+---
 
-💖 Support
-If you found this project helpful, please ⭐ it on GitHub
-and feel free to open an issue or pull request 🚀
+## 🔮 Future Enhancements
+
+✨ Dark mode toggle  
+✨ Categorized & searchable notes  
+✨ Rich text formatting (bold, highlight, lists)  
+✨ Share notes between users  
+✨ PWA support for offline access  
+
+---
+
+## 👨‍💻 Author
+
+**Sumit Dwivedi**  
+🎓 B.Tech CSE | MERN Developer | Lifelong Learner  
+🌐 [GitHub](https://github.com/sumitdwivedi01) • [LinkedIn](https://linkedin.com/in/sumitdwivedi01)
+
+---
+
+## 💖 Support
+
+If you found this project helpful, please ⭐ it on [GitHub](https://github.com/sumitdwivedi01/iNotebook)!  
+Your feedback and contributions are always welcome 🚀  
+
+---
 
 <div align="center">
-Made with ❤️ by Sumit Dwivedi
 
-</div> ```
+_Made with ❤️ by Sumit Dwivedi_
+
+</div>
