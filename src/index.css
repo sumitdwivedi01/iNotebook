@@ -1,0 +1,326 @@
+i{
+    cursor: pointer;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  border: none;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5d63d4, #9ea2ff);
+}
+.custom-btn {
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.alertBox{
+  max-height: 70px;
+  min-height: 70px;
+  box-sizing: content-box;
+  margin:20px;
+}
+
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.liquid-alert {
+  position: relative;
+  margin: 0px auto;
+  padding: 16px 28px;
+  min-width: 280px;
+  max-width: 550px;
+  border-radius: 40px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4),
+              inset -2px -2px 6px rgba(0, 0, 0, 0.15),
+              0 8px 30px rgba(0, 0, 0, 0.25);
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+
+  
+  opacity: 0;
+  transform: translateY(-12px) scale(0.95);
+  animation: fadeInGlass 0.5s ease forwards;
+}
+
+.alert-title {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.alert-title.success {
+  color: #00c851; 
+}
+
+.alert-title.danger {
+  color: #ff4444;
+}
+
+.alert-title.warning {
+  color: #ffbb33; 
+}
+
+.alert-title.info {
+  color: #33b5e5; 
+}
+
+.alert-msg-dark {
+  font-weight: 400;
+  color: #f2f2f2;
+  opacity: 0.9;
+}
+.alert-msg-light {
+  font-weight: 400;
+  color: #000B18;
+  opacity: 0.9;
+}
+
+/* Animation */
+@keyframes fadeInGlass {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+
+
+/* ---------- NOTEITEM / CARD & BUTTON (paste into your index.css) ---------- */
+
+/* Ensure icon cursor */
+.note-card i {
+  cursor: pointer;
+}
+
+/* Card base (kept compatible with existing vars usage) */
+.note-card {
+  border-radius: 16px;
+  background: var(--card-bg);
+  background-color: var(--card-bg);
+  color: var(--card-fg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  transition: box-shadow 0.25s ease, transform 0.18s ease;
+  overflow: hidden;
+}
+
+.note-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.28);
+}
+
+/* Remove bootstrap card header/footer default bg */
+.note-card .card-header,
+.note-card .card-footer {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Titles / text */
+.note-title {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--card-fg);
+}
+
+.note-desc {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+   white-space: pre-line;
+}
+
+/* Tag chip */
+.note-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  background: var(--chip-bg);
+  color: var(--chip-fg);
+  border: 1px solid var(--card-border);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+.note-tag::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.8;
+}
+
+/* Icon circle buttons (edit/delete) - keep as before */
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  background: var(--icon-bg);
+  color: var(--icon-fg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.icon-btn:hover {
+  background: var(--icon-bg-hover);
+  border-color: var(--card-border);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+/* date text */
+.note-date {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* ---------- View Button (glass) ---------- */
+.btn-view {
+  --btn-glass-bg: rgba(255, 255, 255, 0.12);
+  --btn-glass-border: rgba(255, 255, 255, 0.35);
+  --btn-glass-shadow: rgba(31, 38, 135, 0.2);
+  --btn-text-light: #222;
+  --btn-text-dark: #000000;
+
+  position: relative;
+  padding: 10px 22px;
+  border: 1px solid var(--btn-glass-border);
+  border-radius: 9999px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  color: var(--btn-text-dark) !important;
+  background: var(--btn-glass-bg);
+  backdrop-filter: blur(10px) saturate(180%);
+  box-shadow: 0 8px 32px var(--btn-glass-shadow),
+              inset 0 4px 20px rgba(255, 255, 255, 0.15);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease,
+              background 0.25s ease,
+              color 0.25s ease;
+  overflow: hidden;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* subtle glossy overlay */
+.btn-view::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: linear-gradient(
+    145deg,
+    rgba(27, 5, 96, 0.2) 0%,
+    rgba(13, 5, 50, 0.05) 100%
+  );
+  opacity: 0.45;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+.btn-view:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 16px 46px rgba(0,0,0,0.28),
+              inset 0 6px 24px rgba(255,255,255,0.14);
+}
+.btn-view:active { transform: scale(0.985); }
+
+/* ---------- Back-like pill (use this class name: .btn-back) ---------- */
+.btn-back {
+  /* gradient tuned to dark theme and similar to your .btn-primary */
+  background: linear-gradient(135deg, #25314f 0%, #3a4f9a 45%, #6a6fe9 100%);
+  border: none;
+  color: #fff !important;
+  box-shadow: 0 12px 36px rgba(37,45,88,0.6), inset 0 -6px 18px rgba(255,255,255,0.03);
+  padding: 12px 20px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-decoration: none !important;
+}
+
+/* small arrow/icon inside pill */
+.btn-back .back-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.08);
+  box-shadow: inset 0 2px 6px rgba(255,255,255,0.02);
+  font-size: 14px;
+}
+
+/* ---------- Theme tokens (override for dark gradient card) ---------- */
+.note-light {
+  --card-bg: rgba(255,255,255,0.66);
+  --card-border: rgba(15,23,42,0.10);
+  --card-fg: #0f172a;
+  --muted: #475569;
+  --chip-bg: rgba(15,23,42,0.06);
+  --chip-fg: #334155;
+  --icon-bg: rgba(15,23,42,0.04);
+  --icon-bg-hover: rgba(15,23,42,0.08);
+  --icon-fg: #0f172a;
+}
+
+.note-dark {
+  --card-bg: linear-gradient(180deg,
+                  rgba(6,10,18,0.78) 0%,
+                  rgba(10,18,28,0.78) 40%,
+                  rgba(7,12,22,0.86) 100%);
+  --card-border: rgba(255,255,255,0.04);
+  --card-fg: #f8fafc;        /* near white */
+  --muted: rgba(255,255,255,0.78);  /* lighter muted */
+  --chip-bg: rgba(255,255,255,0.03);
+  --chip-fg: #e6eefc;
+  --icon-bg: rgba(255,255,255,0.03);
+  --icon-bg-hover: rgba(255,255,255,0.06);
+  --icon-fg: #eef2ff;
+}
+
+.note-card .btn-view.btn-back {
+  padding-left: 14px;
+  padding-right: 18px;
+}
+
+.line{
+  height: 40px;
+}
+
+
