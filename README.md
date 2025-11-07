@@ -1,12 +1,64 @@
-# React + Vite
+# 🧠 iNotebook — Your Personal Cloud Notebook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> ✨ A full-stack MERN app that lets you securely create, edit, delete, and organize personal notes — accessible anytime, anywhere!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 About the Project
+**iNotebook** is a secure and responsive **MERN stack** web app that allows users to take notes in the cloud with authentication and privacy.  
+Users can **sign up**, **log in**, and **manage their notes** (Create, Read, Update, Delete) with smooth React UI and MongoDB backend.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+✅ **User Authentication**
+- Sign up and log in with email/password  
+- Secure JWT token-based sessions  
+
+✅ **Add & Manage Notes**
+- Create, view, edit, and delete notes easily  
+- React handles real-time state updates  
+
+✅ **Cloud Storage**
+- Notes are stored in MongoDB Atlas for global access  
+
+✅ **Responsive UI**
+- Clean design using React and Bootstrap for mobile & desktop  
+
+✅ **Authorization**
+- Each user sees only their notes  
+- Private routes protected by tokens  
+
+✅ **Smart Alerts**
+- Feedback for every action (add/edit/delete/login/signup)  
+
+✅ **Security**
+- Token validation and encrypted storage  
+- User data isolation for privacy  
+
+---
+
+## 🧩 Tech Stack
+
+| Frontend | Backend | Database | Tools |
+|-----------|----------|-----------|--------|
+| ⚛️ React.js | 🧠 Node.js + Express | 🍃 MongoDB Atlas | 🔐 JWT Auth |
+| 💅 Bootstrap / CSS | 🧰 REST API | 🌍 Cloud Deployment | 🧑‍💻 Git + GitHub |
+
+---
+
+## 🖼️ Preview
+
+| Dashboard | Note Editing | Login / Signup |
+|------------|---------------|----------------|
+| ![Dashboard](./assets/dashboard.png) | ![Note Edit](./assets/editnote.png) | ![Login](./assets/login.png) |
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repo
+```bash
+git clone https://github.com/sumitdwivedi01/iNotebook.git
+cd iNotebook
