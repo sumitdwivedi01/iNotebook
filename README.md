@@ -60,26 +60,26 @@ It allows users to **sign up**, **log in**, and **manage notes** — including c
 
 ## 🗂️ Folder Structure
 
-iNotebook/
-│
-├── backend/
-│ ├── index.js
-│ ├── routes/
-│ ├── models/
-│ └── middleware/
-│
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── context/
-│ │ ├── pages/
-│ │ └── App.js
-│ └── package.json
-│
-└── assets/
-├── dashboard.png
-├── editnote.png
-└── login.png
+iNotebook/<br>
+│<br>
+├── backend/<br>
+│ ├── index.js<br>
+│ ├── routes/<br>
+│ ├── models/<br>
+│ └── middleware/<br>
+│<br>
+├── frontend/<br>
+│ ├── src/<br>
+│ │ ├── components/<br>
+│ │ ├── context/<br>
+│ │ ├── pages/<br>
+│ │ └── App.js<br>
+│ └── package.json<br>
+│<br>
+└── assets/<br>
+├── dashboard.png<br>
+├── editnote.png<br>
+└── login.png<br>
 
 ---
 
