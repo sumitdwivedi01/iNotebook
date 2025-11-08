@@ -21,10 +21,24 @@
 It allows users to **sign up**, **log in**, and **manage notes** — including creating, editing, and deleting — with full authentication and authorization.  
 
 ---
+---
+
+## 📢 Project Showcase  
+
+🎥 **Want to see it in action?**  
+Check out my LinkedIn post where I shared the full preview and highlights 👇  
+
+<div align="center">
+
+[![LinkedIn Project Demo](https://img.shields.io/badge/Watch%20on%20LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/posts/sumitdwivedi01_mern-react-nodejs-activity-7392861478778748928-FdSo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFLqYCUBEr4LWf1fL8C6bPk8SkwxXDvE1wc)
+
+</div>
+
+---
 
 ## 🚀 Features
 
-✅ **User Authentication** — Secure JWT login and signup  
+✅ **User Authentication** — Secure JWT loagin and signup  
 ✅ **Add, Edit & Delete Notes** — Real-time updates with React  
 ✅ **Cloud Storage** — All notes saved securely in MongoDB Atlas  
 ✅ **Responsive UI** — Mobile-friendly modern layout  
